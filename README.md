@@ -1,4 +1,4 @@
-# Power  Mailer-Inbox-v2-
+# Power Mailer Inbox v2
 Thanks For Use My SCRIPT Power Mailer Inbox v2  
 Function Power Mailer Inbox v2 
 
