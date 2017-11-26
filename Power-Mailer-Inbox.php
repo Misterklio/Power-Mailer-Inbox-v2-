@@ -7,7 +7,7 @@
 // Add login/password pairs below, like described above
 // NOTE: all rows except last must have comma "," at the end of line
 $MisterklioProtect = array(
-  '' => 'shinigami' /// Pw Default = PowerMailerInbox
+  '' => 'PowerMailerInbox' /// Pw Default = PowerMailerInbox
 );
 
 // request login? true - show login and password boxes, false - password box only
@@ -118,9 +118,9 @@ padding: 0;
   <form method="post">
 <h1 style="color:#ffffff;">
 	<a id="user-content-installation" class="anchor" href="#installation" aria-hidden="true">
-<span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome To Power Mailer Inbox <code style="font-size:12px;color:#0bc4d1;">v2 </code> </h1>
+<span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome To Power Mailer Inbox <code style="font-size:12px;color:#0bc4d1;">v2.1 </code> </h1>
 <p style="font-size:13px;color:#ffffff;">
- <code style="font-size:12px;color:#0bc4d1;"> Function Power Mailer Inbox v2</code>
+ <code style="font-size:12px;color:#0bc4d1;"> Function Power Mailer Inbox v2.1</code>
 <br>All Message Header Fields on
 <br>Name Message Fixed To >service<
 <br>Random Email Automaticly Change
@@ -148,7 +148,7 @@ $ii = base64_encode ('<p>
 <div>
 	 <p><footer class='MK-footer'>
 	 <p></p><p></p>
-<p style="font-size:12px;color:#ffffff;">© 2017 CODED BY <? echo $MyRight ;?> | <a href="https://pastebin.com/NnPuBu66" target="black"> Download Script </a> |</p>
+<p style="font-size:12px;color:#ffffff;">&copy; 2017 CODED BY <? echo $MyRight ;?> | <a href="https://github.com/Misterklio/Power-Mailer-Inbox-v2-/" target="black"> DOWNLOAD SCRIPT </a> |</p>
 <p></p><p></p>
 <br> <br>
 </div>
@@ -235,7 +235,7 @@ body ,a{
 textarea {
 width: 85%;
 border: none;
-height:18%;
+height:10%;
 margin: 0;
 padding: 0;
 }
@@ -284,7 +284,7 @@ input[type=submit] {
 <? $MyRight = "MISTERKLIO" ; ?>
 <div align="center"><h2 style="color:#ffffff;">
 	<a id="user-content-installation" class="anchor" href="#installation" aria-hidden="true">
-<span aria-hidden="true" class="octicon octicon-link"></span></a> Power Mailer Inbox <code style="font-size:12px;color:#0bc4d1;">v2 </code> </h2>
+<span aria-hidden="true" class="octicon octicon-link"></span></a> Power Mailer Inbox <code style="font-size:12px;color:#0bc4d1;">v2.1 </code> </h2>
 <p style="font-size:12px;color:#ffffff;"> Good Server Send Inbox Use My Script With a Good Server </p>
 <div style="font-size:14px;color:#ffffff;" >
 <a href="?home" class="MISTERKLIO-B"> Home </a> 
@@ -320,8 +320,8 @@ exit;}
 <span style="font-size:13px;color:#ffffff;"><? echo $Email ?></span>
 
 			<input name="Service" type="text" value="<?php 
-echo "noreply-".$RandomMail.""; 
-echo '-Service@'; echo ''.$RandomMail2.'-norepaly.com';  # eg result: -Service@Random.com
+echo "noreply-".$RandomMail."".$RandomMail.""; 
+echo '-Service@'; echo ''.$RandomMail2.'-Support.com';  # eg result: -Service@Random.com
 ?>" class="highlight highlight-source-json" id="Service" style="border-radius: 15px; width:100%" placeholder="Email">
 
   <? $Letter = "Letter"; ?>
@@ -368,12 +368,12 @@ if($Misterklio != "") {
 		//// PHPMailer True
 		$headers .= "X-Mailer: PHP/" . phpversion();
 		$headers .= "X-Mailer: Microsoft Office Outlook, Build 17.551210\n";
-		/// $headers .= "X-Mailer: Gmail \n";
-		/// $headers .= "X-Mailer: Yahoo \n";
-		/// $headers .= "X-Mailer: mail.ru \n";
+	    $headers .= "X-Mailer: Gmail \n";
+		$headers .= "X-Mailer: Yahoo \n";
+		$headers .= "X-Mailer: mail.ru \n";
 		
 		/// Random Mail
-		$headers .= "From:service<no-replay-".$RandomMail."@".$RandomMail."-noreplay.com>";
+		$headers .= "From:Service <no-replay-".$RandomMail."".$RandomMail."@".$RandomMail."-Support.com>";
 		//// to
 		if(mail($email[$Inbox], $subject, $message, $headers))
 			
@@ -413,7 +413,7 @@ if($Misterklio != "") {
 
 
 <p></p><p></p>
-<p style="font-size:12px;color:#ffffff;">© 2017 CODED BY <? echo $MyRight ; ?> </p>
+<p style="font-size:12px;color:#ffffff;">&copy; 2017 CODED BY <? echo $MyRight ; ?> </p>
 <p></p><p></p>
  </div>
 
